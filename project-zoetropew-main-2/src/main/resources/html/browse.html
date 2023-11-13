@@ -1,0 +1,47 @@
+<section class="section">
+    <div class="container">
+      <div class="columns is-mobile is-multiline is-centered">
+	    
+	    <div class="column is-one-quarter is-centered">
+	    
+	    <h2 class="title">Browse Index</h2>
+	      <form method="GET" action="${action}">
+	        <div class="control">
+	          <button class="button is-link" type="submit">
+	          	<i class="fas fa-book"></i>
+	            &nbsp;Show complete index
+	          </button>
+	        </div>
+	      </form>&nbsp;
+	      
+	      </div>
+	      
+	      <div class="column">
+	      
+	      <form method="GET" action="${action}">
+	        <div class="field">
+	          <label class="label" for="query">Search for word in index</label>
+	          <div class="control">
+	            <input class="input is-rounded" type="text" name="query" id="query" placeholder="Enter query">
+	          </div>
+	        </div>
+	
+	        <div class="control">
+	          <button class="button is-link" type="submit">
+	            <i class="fas fa-search"></i>
+	            &nbsp;Search
+	          </button>
+	        </div>
+	      </form>
+	      
+	      </div>
+	      
+	    </div>
+    </div>&nbsp;
+    
+</section>
+
+<section class="section">
+    <div class="container">
+      <h2 class="title">Index Entries</h2>
+      <h3 class="label">${query}</h3>

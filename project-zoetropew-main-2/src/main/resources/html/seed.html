@@ -1,0 +1,38 @@
+<section class="section">
+    <div class="container">
+      <div class="columns is-mobile is-multiline is-centered">
+		<div class="column is-half">
+	      <form method="${method}" action="${action}">
+	        <div class="field">
+	          <label class="label" for="seed">Add a seed URL to crawl <span style="color:red;">*</span></label>
+	          <div class="control">
+	            <input class="input is-rounded" type="text" name="seed" id="seed" placeholder="Enter URL" required>
+	          </div>
+	        </div>
+	        
+	        <div class="field">
+	          <label class="label" for="crawl">Number of URLs to crawl</label>
+	          <div class="control">
+	            <input class="input is-rounded" type="number" min="1" name="crawl" id="crawl" value="1">
+	          </div>
+	        </div>
+	
+	        <div class="control">
+	          <button class="button is-link" type="submit">
+	            <i class="far fa-plus-square"></i>
+	            &nbsp;Add to index
+	          </button>
+	        </div>
+	      </form>
+	    </div>
+	    <div class="column is-half notification has-background-light">
+    
+	      <h2 class="title column is-centered has-text-dark">Add Seed</h2>
+	      
+	      <div class="field notification white">
+	      	<h3 class="has-text-dark">${added}</h3>
+	      </div>
+	    </div>
+      </div>
+    </div>
+  </section>

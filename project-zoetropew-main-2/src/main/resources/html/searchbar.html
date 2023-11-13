@@ -1,0 +1,35 @@
+  <!-- show form -->
+  <section class="section">
+    <div class="container">
+    
+      <div class="columns is-mobile is-multiline is-centered">
+      <div class="column is-half is-centered has-text-centered">
+
+      <form method="GET" action="${action}">
+        <div class="field">
+          <label class="label" for="query">Finding the bright side of the web</label>
+          <div class="control">
+            <input class="input is-rounded" type="text" name="query" id="query" placeholder="Enter query">
+          </div>
+        </div>
+
+        <div class="control">
+          <button class="button is-link" type="submit">
+            <i class="fas fa-search"></i>
+            &nbsp;Search
+          </button>
+        </div>
+      </form>
+      
+      </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <hr/>
+      <h2 class="title has-text-centered">Results</h2>
+      <h3 class="label has-text-centered">${query}</h3>
+      <hr/>
